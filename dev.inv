@@ -1,6 +1,13 @@
 [webservers]
-20.247.6.242
+20.205.140.135
 
 [webservers:vars]
-ansible_user=azureuser
+ansible_user=bindu
+ansible_python_interpreter=/usr/bin/python3
+
+[webservers]
+20.205.141.151
+
+[webservers:vars]
+ansible_user=bindu
 ansible_python_interpreter=/usr/bin/python3
