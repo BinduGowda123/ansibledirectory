@@ -1,7 +1,9 @@
 ---
 - hosts: webservers
+  vars:
+    directory: rsbk
   tasks:
   - name: ansible create directory example
     file:
-      path: /home/azureuser/{{directory}}
+      path: /home/bindu/{{directory}}
       state: directory
