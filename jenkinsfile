@@ -8,7 +8,7 @@ stages{
   }
   stage('Execute ansible'){
     steps{
-        ansiblePlaybook become: true, becomeUser: 'bindu', credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'dircreate.yml'
+        ansiblePlaybook become: true, becomeUser: 'bindu', credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'ansibledirectory', inventory: 'dev.inv', playbook: 'dircreate.yml'
     }
   } 
 }
