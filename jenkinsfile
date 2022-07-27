@@ -3,12 +3,12 @@ agent any
 stages{
   stage('CheckOutCode'){
     steps{
-        git branch: 'main', url: 'https://github.com/poojasreee/ansible.git'
+        git branch: 'main', url: 'https://github.com/BinduGowda123/ansibledirectory.git'
     }
   }
   stage('Execute ansible'){
     steps{
-        ansiblePlaybook become: true, becomeUser: 'azureuser', credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'filecreate.yml'
+        ansiblePlaybook become: true, becomeUser: 'bindu', credentialsId: 'ansible', disableHostKeyChecking: true, installation: 'ansible', inventory: 'dev.inv', playbook: 'dircreate.yml'
     }
   } 
 }
