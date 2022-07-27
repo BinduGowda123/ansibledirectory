@@ -5,9 +5,3 @@
 ansible_user=bindu
 ansible_python_interpreter=/usr/bin/python3
 
-[webservers]
-20.205.141.151
-
-[webservers:vars]
-ansible_user=bindu
-ansible_python_interpreter=/usr/bin/python3
